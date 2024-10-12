@@ -101,23 +101,31 @@
       </div>
     -->
       <!-- TABS ENDING -->
+      <div class="menu">
+        <button onclick="Swal.fire({ title: 'Export',
+        html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
+        })">Save</button>
+        <button onclick="Swal.fire({ title: 'Export',
+      html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
+      })">Save as</button>
+        <button onclick="editor.clearModuleSelected()">Clear
+      </div>
+      </button>
       <!-- WORKBENCH STARTING -->
       <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-        <div class="btn-export" onclick="Swal.fire({ title: 'Export',
-        html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
-        })">Export</div>
-        <div class="btn-clear" onclick="editor.clearModuleSelected()">Clear</div>
+
         <div class="btn-lock">
           <i id="lock" class="fas fa-lock" onclick="editor.editor_mode='fixed'; changeMode('lock');"></i>
           <i id="unlock" class="fas fa-lock-open" onclick="editor.editor_mode='edit'; changeMode('unlock');"
             style="display:none;"></i>
         </div>
-        <div class="bar-zoom">
+        <menuZoom class="bar-zoom"></menuZoom>
+        <!--div class="bar-zoom">
           <i class="fas fa-search-minus" onclick="editor.zoom_out()"></i>
           <i class="fas fa-search" onclick="editor.zoom_reset()"></i>
           <i class="fas fa-search-plus" onclick="editor.zoom_in()"></i>
-        </div>
+        </div-->
       </div>
     </div>
   </div>
@@ -416,8 +424,6 @@
       editor.editor_mode = "edit";
     }
 
-    /* ONLY NECESARY IF DESIGN IS DIFERENT FROM SOURCE CODE */
-/*
     function changeModule(event) {
       var all = document.querySelectorAll(".menu ul li");
       for (var i = 0; i < all.length; i++) {
@@ -438,8 +444,11 @@
       }
 
     }
-*/
+
   </script>
+
+  <script type="module" src="/bundle.js"></script>
+
 </body>
 
 </html>
