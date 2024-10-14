@@ -32,11 +32,19 @@
 
 
 
-  <!--header>
+  <header>
     <h2>Drawflow</h2>
-    <div class="github-link"><a href="https://github.com/jerosoler/Drawflow" target="_blank"><i
-          class="fab fa-github fa-3x"></i></a></div>
-  </header-->
+      <div class="menu">
+        <button onclick="Swal.fire({ title: 'Export',
+        html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
+        })">Save</button>
+        <button onclick="Swal.fire({ title: 'Export',
+      html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
+      })">Save as</button>
+        <button onclick="editor.clearModuleSelected()">Clear
+      </button>
+      </div>
+  </header>
   <div class="wrapper">
     <div class="col">
       <div class="drag-drawflow" draggable="true" ondragstart="drag(event)" data-node="facebook">
@@ -99,18 +107,8 @@
           <li onclick="editor.changeModule('Other'); changeModule(event);">Other Module</li>
         </ul>
       </div>
-    -->
+      -->
       <!-- TABS ENDING -->
-      <div class="menu">
-        <button onclick="Swal.fire({ title: 'Export',
-        html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
-        })">Save</button>
-        <button onclick="Swal.fire({ title: 'Export',
-      html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'
-      })">Save as</button>
-        <button onclick="editor.clearModuleSelected()">Clear
-      </div>
-      </button>
       <!-- WORKBENCH STARTING -->
       <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
 
