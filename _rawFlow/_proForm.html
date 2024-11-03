@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://v7-react.carbondesignsystem.com/iframe.html?id=components-modal-%2Ddefault&args=&viewMode=story -->
+<html lang="en">
+
+<head>
+    <script src="./carbon.js"></script>
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+    <link rel="stylesheet" type="text/css" href="_beautiful.css" />
+    <link rel="stylesheet" type="text/css" href="carbon.css">
+    <link rel="stylesheet" type="text/css" href="carbon2.css">
+    <link rel="stylesheet" type="text/css" href="theme_base.css" />
+    <!-- 
+    IU Design System: mx360 | 2024
+    CODE: David Ochoa
+    License: MIT2
+    UI ELEMENT: modal
+    INSPIRED BY:
+    - IBM CARBON DESIGN SYSTEM DROPDOWN
+    - https://codepen.io/team/carbon/pen/KyXpKV
+    
+    ToDo:
+      1. CONVERT INTO TAG
+      2. THE JSON FILE ADD AS RIOT TAG PARAMATER
+    -->
+</head>
+
+<body class="sb-main-padded bx--body--with-modal-open sb-show-main">
+
+    <button class="bx--btn bx--btn--ghost" type="button" data-modal-target="#root">
+        Passive
+    </button>
+
+    <button class="bx--btn bx--btn--ghost" type="button" data-modal-target="#root2">
+        Passive2
+    </button>
+
+    <div id="root" data-modal="" class="bx--modal"
+        tabindex="-1">
+        <!-- MODAL LIMITING WIDTH -->
+        <div class="container"
+            data-floating-menu-container="true">
+            <!-- MODAL OVER -->
+            <div class="bx--modal bx--modal-tall is-visible" role="presentation">
+                <!-- MODAL BOX -->
+                <div role="dialog" class="bx--modal-container" aria-label="Account resources" aria-modal="true"
+                    tabindex="-1">
+                    <!-- MODAL HEADER START -->
+                    <div class="bx--modal-header">
+                        <h2 id="bx--modal-header__label--modal-1" class="bx--modal-header__label">
+                            Account resources
+                        </h2>
+                        <h3 id="bx--modal-header__heading--modal-1" class="bx--modal-header__heading">
+                            Add a custom domain
+                        </h3>
+                        <!-- close button -->
+                        <button class="bx--modal-close" type="button" aria-label="close" onclick="document.getElementById('root').opacity=0;document.getElementById('root').className='bx--modal bx--modal-tall'";>
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20"
+                                height="20" viewBox="0 0 32 32" class="bx--modal-close__icon">
+                                <path
+                                    d="M17.4141 16L24 9.4141 22.5859 8 16 14.5859 9.4143 8 8 9.4141 14.5859 16 8 22.5859 9.4143 24 16 17.4141 22.5859 24 24 22.5859 17.4141 16z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- MODAL HEADER END -->
+                    <!-- MODAL BODY START -->
+                    <div id="bx--modal-body--modal-1" class="bx--modal-content">
+                        <p style="margin-bottom: 1rem;">Custom domains direct requests for your apps in this Cloud
+                            Foundry
+                            organization to a URL that you own. A custom domain can be a shared domain, a shared
+                            subdomain, or a
+                            shared domain and host.</p>
+                        <div class="bx--form-item bx--text-input-wrapper"><label for="text-input-1"
+                                class="bx--label">Domain
+                                name</label>
+                            <div class="bx--text-input__field-outer-wrapper">
+                                <div class="bx--text-input__field-wrapper"><input id="text-input-1"
+                                        placeholder="e.g. github.com" type="text"
+                                        class="bx--text-input bx--text-input--md" title="e.g. github.com"
+                                        data-modal-primary-focus="true" style="margin-bottom: 1rem;"></div>
+                            </div>
+                        </div>
+                        <div class="bx--form-item">
+                            <div class="bx--select"><label for="select-1" class="bx--label">Region</label>
+                                <div class="bx--select-input__wrapper"><select id="select-1" class="bx--select-input">
+                                        <option class="bx--select-option" value="us-south" selected="">US South</option>
+                                        <option class="bx--select-option" value="us-east">US East</option>
+                                    </select><svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16"
+                                        viewBox="0 0 16 16" aria-hidden="true" class="bx--select__arrow">
+                                        <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="bx--dropdown__wrapper bx--list-box__wrapper"><label class="bx--label"
+                                id="downshift-0-label" for="downshift-0-toggle-button">Dropdown</label>
+                            <div id="drop" class="bx--dropdown bx--list-box"><button type="button" role="combobox"
+                                    aria-controls="downshift-0-menu" class="bx--list-box__field" aria-disabled="false"
+                                    title="Dropdown" id="downshift-0-toggle-button" aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    aria-labelledby="downshift-0-label downshift-0-toggle-button"><span
+                                        class="bx--list-box__label">Dropdown</span>
+                                    <div class="bx--list-box__menu-icon"><svg focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" name="chevron--down" aria-label="Open menu" width="16"
+                                            height="16" viewBox="0 0 16 16" role="img">
+                                            <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                            <title>Open menu</title>
+                                        </svg></div>
+                                </button>
+                                <div id="downshift-0-menu" class="bx--list-box__menu" role="listbox"
+                                    aria-labelledby="downshift-0-label" tabindex="-1"></div>
+                            </div>
+                        </div>
+                        <div class="bx--multi-select__wrapper bx--list-box__wrapper"><label class="bx--label"
+                                id="downshift-1-label" for="downshift-1-toggle-button"></label>
+                            <div id="test" class="bx--multi-select bx--list-box">
+                                <div class="bx--list-box__field--wrapper"><button type="button"
+                                        class="bx--list-box__field" aria-disabled="false" id="downshift-1-toggle-button"
+                                        aria-haspopup="listbox" aria-expanded="false"
+                                        aria-labelledby="downshift-1-label downshift-1-toggle-button"><span
+                                            id="multiselect-field-label-1"
+                                            class="bx--list-box__label">Multiselect</span>
+                                        <div class="bx--list-box__menu-icon"><svg focusable="false"
+                                                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor" name="chevron--down" aria-label="Open menu"
+                                                width="16" height="16" viewBox="0 0 16 16" role="img">
+                                                <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                                <title>Open menu</title>
+                                            </svg></div>
+                                    </button></div>
+                                <div id="downshift-1-menu" class="bx--list-box__menu" role="listbox"
+                                    aria-multiselectable="true" aria-labelledby="downshift-1-label" tabindex="-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODAL BODY ENDS -->
+                    <!-- MODAL FOOTER START -->
+                    <div class="bx--modal-footer bx--btn-set">
+                        <button tabindex="0" class="bx--btn bx--btn--secondary" type="button">
+                            Cancel
+                        </button>
+                        <button tabindex="0" class="bx--btn bx--btn--primary" type="button">
+                            Add
+                        </button>
+                    </div>
+                    <!-- MODAL FOOTER END -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="root2" data-modal="" class="bx--modal" tabindex="-1">
+        <!-- MODAL LIMITING WIDTH -->
+        <div class="container"
+            data-floating-menu-container="true">
+            <!-- MODAL OVER -->
+            <div class="bx--modal bx--modal-tall is-visible" role="presentation">
+                <!-- MODAL BOX -->
+                <div role="dialog" class="bx--modal-container" aria-label="Account resources" aria-modal="true"
+                    tabindex="-1">
+                    <!-- MODAL HEADER START -->
+                    <div class="bx--modal-header">
+                        <h2 id="bx--modal-header__label--modal-1" class="bx--modal-header__label">
+                            Account resources
+                        </h2>
+                        <h3 id="bx--modal-header__heading--modal-1" class="bx--modal-header__heading">
+                            Add a custom domain
+                        </h3>
+                        <!-- close button -->
+                        <button class="bx--modal-close" type="button" aria-label="close" onclick="document.getElementById('root2').opacity=0;document.getElementById('root2').className='bx--modal bx--modal-tall'";>
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20"
+                                height="20" viewBox="0 0 32 32" class="bx--modal-close__icon">
+                                <path
+                                    d="M17.4141 16L24 9.4141 22.5859 8 16 14.5859 9.4143 8 8 9.4141 14.5859 16 8 22.5859 9.4143 24 16 17.4141 22.5859 24 24 22.5859 17.4141 16z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- MODAL HEADER END -->
+                    <!-- MODAL BODY START -->
+                    <div id="bx--modal-body--modal-1" class="bx--modal-content">
+                        <p style="margin-bottom: 1rem;">Custom domains direct requests for your apps in this Cloud
+                            Foundry
+                            organization to a URL that you own. A custom domain can be a shared domain, a shared
+                            subdomain, or a
+                            shared domain and host.</p>
+                        <div class="bx--form-item bx--text-input-wrapper"><label for="text-input-1"
+                                class="bx--label">Domain
+                                name</label>
+                            <div class="bx--text-input__field-outer-wrapper">
+                                <div class="bx--text-input__field-wrapper"><input id="text-input-1"
+                                        placeholder="e.g. github.com" type="text"
+                                        class="bx--text-input bx--text-input--md" title="e.g. github.com"
+                                        data-modal-primary-focus="true" style="margin-bottom: 1rem;"></div>
+                            </div>
+                        </div>
+                        <div class="bx--form-item">
+                            <div class="bx--select"><label for="select-1" class="bx--label">Region</label>
+                                <div class="bx--select-input__wrapper"><select id="select-1" class="bx--select-input">
+                                        <option class="bx--select-option" value="us-south" selected="">US South</option>
+                                        <option class="bx--select-option" value="us-east">US East</option>
+                                    </select><svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="16" height="16"
+                                        viewBox="0 0 16 16" aria-hidden="true" class="bx--select__arrow">
+                                        <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="bx--dropdown__wrapper bx--list-box__wrapper"><label class="bx--label"
+                                id="downshift-0-label" for="downshift-0-toggle-button">Dropdown</label>
+                            <div id="drop" class="bx--dropdown bx--list-box"><button type="button" role="combobox"
+                                    aria-controls="downshift-0-menu" class="bx--list-box__field" aria-disabled="false"
+                                    title="Dropdown" id="downshift-0-toggle-button" aria-haspopup="listbox"
+                                    aria-expanded="false"
+                                    aria-labelledby="downshift-0-label downshift-0-toggle-button"><span
+                                        class="bx--list-box__label">Dropdown</span>
+                                    <div class="bx--list-box__menu-icon"><svg focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" name="chevron--down" aria-label="Open menu" width="16"
+                                            height="16" viewBox="0 0 16 16" role="img">
+                                            <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                            <title>Open menu</title>
+                                        </svg></div>
+                                </button>
+                                <div id="downshift-0-menu" class="bx--list-box__menu" role="listbox"
+                                    aria-labelledby="downshift-0-label" tabindex="-1"></div>
+                            </div>
+                        </div>
+                        <div class="bx--multi-select__wrapper bx--list-box__wrapper"><label class="bx--label"
+                                id="downshift-1-label" for="downshift-1-toggle-button"></label>
+                            <div id="test" class="bx--multi-select bx--list-box">
+                                <div class="bx--list-box__field--wrapper"><button type="button"
+                                        class="bx--list-box__field" aria-disabled="false" id="downshift-1-toggle-button"
+                                        aria-haspopup="listbox" aria-expanded="false"
+                                        aria-labelledby="downshift-1-label downshift-1-toggle-button"><span
+                                            id="multiselect-field-label-1"
+                                            class="bx--list-box__label">Multiselect</span>
+                                        <div class="bx--list-box__menu-icon"><svg focusable="false"
+                                                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor" name="chevron--down" aria-label="Open menu"
+                                                width="16" height="16" viewBox="0 0 16 16" role="img">
+                                                <path d="M8 11L3 6 3.7 5.3 8 9.6 12.3 5.3 13 6z"></path>
+                                                <title>Open menu</title>
+                                            </svg></div>
+                                    </button></div>
+                                <div id="downshift-1-menu" class="bx--list-box__menu" role="listbox"
+                                    aria-multiselectable="true" aria-labelledby="downshift-1-label" tabindex="-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MODAL BODY ENDS -->
+                    <!-- MODAL FOOTER START -->
+                    <div class="bx--modal-footer bx--btn-set">
+                        <button tabindex="0" class="bx--btn bx--btn--secondary" type="button">
+                            Cancel
+                        </button>
+                        <button tabindex="0" class="bx--btn bx--btn--primary" type="button">
+                            Add
+                        </button>
+                    </div>
+                    <!-- MODAL FOOTER END -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

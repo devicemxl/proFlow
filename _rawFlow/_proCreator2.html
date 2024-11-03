@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)https://v7-react.carbondesignsystem.com/iframe.html?id=components-modal-%2Ddefault&args=&viewMode=story -->
+<html lang="en">
+
+<head>
+    <script src="./carbon.js"></script>
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+    <!--STYLE-->
+    <link rel="stylesheet" type="text/css" href="_beautiful.css" />
+    <!--link rel="stylesheet" type="text/css" href="carbon.css"-->
+    <link rel="stylesheet" type="text/css" href="carbon2.css">
+    <link rel="stylesheet" type="text/css" href="theme_base.css" />
+    <!-- BUTTONS STYLE -->
+    <link rel="stylesheet" type="text/css" href="securityCarbon.css" />
+    <!-- 
+    IU Design System: mx360 | 2024
+    CODE: David Ochoa
+    License: MIT2
+    UI ELEMENT: modal
+    INSPIRED BY:
+    - IBM CARBON DESIGN SYSTEM DROPDOWN
+    - https://codepen.io/team/carbon/pen/KyXpKV
+    
+    ToDo:
+      1. CONVERT INTO TAG
+      2. THE JSON FILE ADD AS RIOT TAG PARAMATER
+    -->
+</head>
+
+<body class="sb-main-padded bx--body--with-modal-open sb-show-main">
+
+
+
+    <button class="bx--btn bx--btn--ghost" type="button" data-modal-target="#root">
+        Trigger
+    </button>
+
+
+    <div id="root" data-modal="" class="bx--modal" tabindex="-1">
+        <!-- MODAL LIMITING WIDTH -->
+        <div class="container" data-floating-menu-container="true">
+            <!-- MODAL OVER -->
+            <div class="bx--modal bx--modal-tall is-visible" role="presentation">
+                <!-- MODAL BOX -->
+                <div role="dialog" class="bx--modal-container proCreator" aria-label="Account resources"
+                    aria-modal="true" tabindex="-1">
+                    <!-- MODAL HEADER START -->
+                    <div class="bx--modal-header">
+                        <h2 id="bx--modal-header__label--modal-1" class="bx--modal-header__label">
+                            Process Name
+                        </h2>
+                        <h3 id="bx--modal-header__heading--modal-1" class="bx--modal-header__heading">
+                            Task Title
+                        </h3>
+                        <!-- close button -->
+                        <button class="bx--modal-close" type="button" aria-label="close"
+                            onclick="document.getElementById('root').opacity=0;document.getElementById('root').className='bx--modal bx--modal-tall'"
+                            ;>
+                            <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20"
+                                height="20" viewBox="0 0 32 32" class="bx--modal-close__icon">
+                                <path
+                                    d="M17.4141 16L24 9.4141 22.5859 8 16 14.5859 9.4143 8 8 9.4141 14.5859 16 8 22.5859 9.4143 24 16 17.4141 22.5859 24 24 22.5859 17.4141 16z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- MODAL HEADER END -->
+                    <!-- MODAL BODY START -->
+                    <style>
+                        .proCreator {
+                            width: 95vw;
+                            height: 95vh;
+                        }
+
+                        .designLimit {
+                            border-radius: 0.25rem;
+                            border-style: dashed;
+                            border-color: rgba(245, 245, 220, 0.125);
+                            border-width: 3px;
+                        }
+
+                        .toolboxContainer {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .toolboxRow {
+                            width: calc(100% - 1rem);
+                            height: 2.5rem;
+                            margin: 0.5rem;
+                            padding: 0.25rem;
+                            /* */
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            justify-content: space-between;
+                            align-items: center;
+
+                        }
+
+                        .ToolboxRowContainer{
+                            width: calc(100% - 1rem);
+                            padding: 0.25rem;
+                        }
+                    </style>
+                    <div id="bx--modal-body--modal-1" class="bx--modal-content">
+
+                        <div class="designLimit toolboxContainer">
+                            <div id="designLimitNote">
+                                <strong>
+                                    Add, edit or delete form objects
+                                </strong>
+                                <br>
+                                <small> This note doesn't appear on form</small>
+                            </div>
+
+                            <div class="designLimit toolboxRow">
+                                <div class="designLimit ToolboxRowContainer empty">
+                                    <small> Drop a form object here</small>
+                                </div>
+                                <div class="security--icon-button-bar security--icon-button-bar--sm">
+                                    <span class="security--icon-button-bar__divider" aria-hidden="true">
+                                        <span class="security--icon-button-bar__divider__inner"></span>
+                                    </span>
+                                    <button
+                                        class="security--button--icon class security--button--icon--sm security--button--icon--tooltip security--button--icon--tooltip--top"
+                                        aria-label="Add Row" type="button" divider="sides">
+                                        <svg focusable="false" preserveAspectRatio="xMidYMid meet"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true"
+                                            width="16" height="16" viewBox="0 0 32 32" class="security--icon class"
+                                            style="will-change: transform;">
+                                            <path
+                                                d="M17 15L17 8 15 8 15 15 8 15 8 17 15 17 15 24 17 24 17 17 24 17 24 15z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <span class="security--icon-button-bar__divider" aria-hidden="true">
+                                        <span class="security--icon-button-bar__divider__inner"></span>
+                                    </span>
+                                    <button
+                                        class="security--button--icon class security--button--icon--sm security--button--icon--tooltip security--button--icon--tooltip--top"
+                                        aria-label="Edit" type="button"><svg focusable="false"
+                                            preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                            fill="currentColor" aria-hidden="true" width="16" height="16"
+                                            viewBox="0 0 32 32" class="security--icon class"
+                                            style="will-change: transform;">
+                                            <path
+                                                d="M2 26H30V28H2zM25.4 9c.8-.8.8-2 0-2.8 0 0 0 0 0 0l-3.6-3.6c-.8-.8-2-.8-2.8 0 0 0 0 0 0 0l-15 15V24h6.4L25.4 9zM20.4 4L24 7.6l-3 3L17.4 7 20.4 4zM6 22v-3.6l10-10 3.6 3.6-10 10H6z">
+                                            </path>
+                                        </svg></button><span class="security--icon-button-bar__divider"
+                                        aria-hidden="true">
+                                        <span class="security--icon-button-bar__divider__inner"></span>
+                                    </span>
+                                    <button
+                                        class="security--button--icon class security--button--icon--sm security--button--icon--tooltip security--button--icon--tooltip--top"
+                                        aria-label="Close" type="button" divider="sides">
+                                        <p> x </p>
+                                    </button>
+                                    <span class="security--icon-button-bar__divider" aria-hidden="true">
+                                        <span class="security--icon-button-bar__divider__inner"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <script>
+
+                        </script>
+
+
+                    </div>
+                    <!-- MODAL BODY ENDS -->
+                    <!-- MODAL FOOTER START -->
+                    <div class="bx--modal-footer bx--btn-set">
+                        <button tabindex="0" class="bx--btn bx--btn--secondary" type="button">
+                            Cancel
+                        </button>
+                        <button tabindex="0" class="bx--btn bx--btn--primary" type="button">
+                            Action
+                        </button>
+                    </div>
+                    <!-- MODAL FOOTER END -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
