@@ -1,0 +1,94 @@
+:root {
+    /* THEME COLORS */
+    /*
+    INSPIRED BY: 
+    PANTONE® USA | PANTONE 19-4052 Classic Blue (Color Of The Year 2020)
+    PANTONE® USA | PANTONE 19-3935 TCX Deep Cobalt
+    PANTONE® USA | PANTONE 13-6030 TCX Carnival Glass
+    */
+    --classic-blue-97:  hsl(208, 95%, 97%);
+    --classic-blue-94:  hsl(203, 94%, 94%);
+    --classic-blue-90:  hsl(205, 92%, 90%);
+    --classic-blue-74:  hsl(205, 78%, 74%);
+    --classic-blue-18:  hsl(202, 31%, 18%);
+    --deep-cobalt-97:   hsl(230, 20%, 94%);
+    --deep-cobalt-89:   hsl(235, 21%, 89%);
+    --deep-cobalt-65:   hsl(231, 24%, 65%);
+    --deep-cobalt-18:   hsl(232, 24%, 18%);
+    --deep-cobalt-18t10:hsla(232, 24%, 18%, 0.10);
+    --deep-cobalt-18t20:hsla(232, 24%, 18%, 0.20);
+    --carnibal-glass-97:hsl(153, 60%, 97%);
+    --carnibal-glass-94:hsl(153, 60%, 94%);
+    --carnibal-glass-89:hsl(155, 59%, 89%);
+    --carnibal-glass-70:hsl(156, 63%, 70%);
+    --carnibal-glass-18:hsl(154, 25%, 18%);
+    --white:    hsl(240, 12%, 98%);
+    --black:    hsl(232, 24%, 5%);
+    --orange:   hsl(39, 100%, 50%);
+    --green:    hsl(158, 100%, 26%); /* According to the theme*/
+    --red:      hsl(0, 100%, 42%);
+    /* */
+    transition: all ease-in-out cubic-bezier(0.215, 0.610, 0.355, 3);
+    /* ELEMENTS COLORING */
+    --node-card-bg: var(--white);
+    --node-card-border:  1px solid var(--deep-cobalt-65);
+    --node-detail-s: var(--classic-blue-74);
+    --node-card-border-s:  1px solid var(--node-detail-s);
+    --node-card-shadow-s: var(--deep-cobalt-18) 0px 20px 30px -10px;
+    --node-card-font-color:var(--deep-cobalt-18);
+
+    --lateral-menu-border:  1px solid var(--deep-cobalt-97);
+    --lateral-menu-border-s:  1px solid var(--deep-cobalt-74);
+    
+    --btn-primary-bg: var(--deep-cobalt-18);
+    --btn-primary-fnt: var(--deep-cobalt-89);
+    --btn-primary-bg-s: var(--carnibal-glass-70);
+    --btn-alert-bg: var(--deep-cobalt-89);
+    --btn-alert-fnt: var(--deep-cobalt-65);
+    --btn-alert-bg-s: var(--red);
+
+    --border-color: var(--classic-blue-94);
+    --background-color: var(--deep-cobalt-97);
+    --background-box-title: var(--white);
+    /* FONTS */
+    /*
+    font-family: 'Roboto', sans-serif;
+    */
+}
+.bx--btn--danger-tertiary:hover, .bx--btn--danger--tertiary:hover {
+    border-color: var(--red);
+    color: var(--white);
+}
+
+.bx--btn--danger-tertiary:hover, .bx--btn--danger--tertiary:hover {
+    background-color:  var(--red);
+}
+.bx--btn--danger-tertiary, .bx--btn--danger--tertiary {
+    border-width: 1px;
+    border-style: solid;
+    border-color:  var(--red);
+    background-color: transparent;
+    color:  var(--red);
+}
+
+
+.bx--btn--process-tertiary:hover, .bx--btn--process--tertiary:hover {
+    border-color: var(--deep-cobalt-18);
+    color:var(--white);
+}
+
+.bx--btn--process-tertiary:hover, .bx--btn--process--tertiary:hover {
+    background-color: var(--deep-cobalt-18);
+}
+.bx--btn--process-tertiary, .bx--btn--process--tertiary {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--deep-cobalt-18);
+    background-color: transparent;
+    color: var(--deep-cobalt-18);
+}
+
+
+.drag-drawflow{
+    color: var(--node-card-font-color);
+}

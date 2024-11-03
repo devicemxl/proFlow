@@ -1,0 +1,69 @@
+<h2>Drag and Drop</h2>
+<p>Drag the image back and forth between the two div elements.</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="taskContainer" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+    <input type="color" class="taskInput">
+    <span class="taskLabel"> Input </span>
+</div>
+</div>
+
+<div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+<style>
+    .taskInput{
+        display: none;
+    }
+    #div1,
+    #drop1,
+    #drop2 {
+        float: left;
+        width: 100px;
+        height: 35px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+<script>
+    function deleteElement(event) {
+        event.preventDefault(); // Prevent default browser behavior
+        const elementToDelete = event.target; // Get the clicked element
+        elementToDelete.remove(); // Remove the element from the DOM
+    }
+
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        // Get the ID of the dragged element
+        var data = ev.dataTransfer.getData("text");
+        // Get the original element by its ID
+        var originalElement = document.getElementById(data);
+
+        // if target have an element not allow to continue
+        //target
+
+        // Clone the original element
+        var clone = originalElement.cloneNode(true);
+        // Optionally give the clone a new ID (recommended for better handling)
+        clone.id = 'x';
+        clone.addEventListener('contextmenu', deleteElement);
+        clone.getElementsByClassName('taskInput')[0].style.display='block';
+        clone.getElementsByClassName('taskLabel')[0].style.display='none';
+
+        // Append the clone to the target element
+        ev.target.appendChild(clone);
+    }
+</script>
