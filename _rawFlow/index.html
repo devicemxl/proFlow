@@ -40,126 +40,89 @@
   <div class="wrapper">
     <div class="col latMenu">
       <div>
-        <div class="security--layout-module security--layout-module--button-cluster">
-          <div class="security--layout-module
-                      security--layout-module--button-cluster__button
-                      bx--btn
-                      bx--btn--ghost
-                      drag-drawflow" tabindex="0" draggable="true" ondragstart="drag(event)">
-            <span>
-              Button 1
+        <ul data-accordion class="bx--accordion">
+
+          <li data-accordion-item class="bx--accordion__item">
+            <button class="bx--accordion__heading" aria-expanded="false" onclick="toggleAccordion(this)">
               <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" class="bx--btn__icon">
-                <path d="M17 15L17 8 15 8 15 15 8 15 8 17 15 17 15 24 17 24 17 17 24 17 24 15z"></path>
+                class="bx--accordion__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path>
               </svg>
-            </span>
-          </div>
-          <div class="security--layout-module
-                      security--layout-module--button-cluster__button
-                      bx--btn
-                      bx--btn--ghost
-                      drag-drawflow" tabindex="0" draggable="true" ondragstart="drag(event)">
-            <span>
-              Button 2
+              <div class="bx--accordion__title" dir="auto">Mensajería y Social</div>
+            </button>
+            <div class="bx--accordion__content">
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="facebook">
+                <i class="fab fa-facebook"></i><span> Facebook</span>
+              </div>
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="slack">
+                <i class="fab fa-slack"></i><span> Slack</span>
+              </div>
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="telegram">
+                <i class="fab fa-telegram"></i><span> Telegram</span>
+              </div>
+            </div>
+          </li>
+
+          <li data-accordion-item class="bx--accordion__item">
+            <button class="bx--accordion__heading" aria-expanded="false" onclick="toggleAccordion(this)">
               <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor" aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" class="bx--btn__icon">
-                <path
-                  d="M2 26H30V28H2zM25.4 9c.8-.8.8-2 0-2.8 0 0 0 0 0 0l-3.6-3.6c-.8-.8-2-.8-2.8 0 0 0 0 0 0 0l-15 15V24h6.4L25.4 9zM20.4 4L24 7.6l-3 3L17.4 7 20.4 4zM6 22v-3.6l10-10 3.6 3.6-10 10H6z">
-                </path>
+                class="bx--accordion__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path>
               </svg>
-            </span>
-          </div>
-          <div class="security--layout-module
-                        security--layout-module--button-cluster__button
-                        bx--btn
-                        bx--btn--ghost
-                        drag-drawflow" tabindex="0" draggable="true" ondragstart="drag(event)" data-node="facebook">
-            <i class="fab fa-facebook"></i>
-            <p>Facebook</p>
-          </div>
-          <div class="security--layout-module
-                          security--layout-module--button-cluster__button
-                          bx--btn
-                          bx--btn--ghost
-                          drag-drawflow" tabindex="0" draggable="true" ondragstart="drag(event)" data-node="slack">
-            <i class="fab fa-slack"></i>
-            <span> Slack receive message</span>
-          </div>
-          <div class="security--layout-module
-                            security--layout-module--button-cluster__button
-                            bx--btn
-                            bx--btn--ghost
-                            drag-drawflow" tabindex="0" draggable="true" ondragstart="drag(event)" data-node="github">
-            <i class="fab fa-github"></i>
-            <span> Github Star</span>
-          </div>
-          <div class="security--layout-module
-                              security--layout-module--button-cluster__button
-                              bx--btn
-                              bx--btn--ghost
-                              drag-drawflow" tabindex="0" draggable="true" ondragstart="drag(event)"
-            data-node="telegram">
-            <i class="fab fa-telegram"></i>
-            <span> Telegram send message</span>
-          </div>
+              <div class="bx--accordion__title" dir="auto">Infraestructura y Datos</div>
+            </button>
+            <div class="bx--accordion__content">
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="aws">
+                <i class="fab fa-aws"></i><span> AWS</span>
+              </div>
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="google">
+                <i class="fab fa-google-drive"></i><span> Google Drive</span>
+              </div>
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="log">
+                <i class="fas fa-file-signature"></i><span> File Log</span>
+              </div>
+            </div>
+          </li>
 
-          
-        </div>
+          <li data-accordion-item class="bx--accordion__item">
+            <button class="bx--accordion__heading" aria-expanded="false" onclick="toggleAccordion(this)">
+              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                class="bx--accordion__arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+                <path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path>
+              </svg>
+              <div class="bx--accordion__title" dir="auto">Lógica y Control</div>
+            </button>
+            <div class="bx--accordion__content">
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="multiple">
+                <i class="fas fa-code-branch"></i><span> Multiple I/O</span>
+              </div>
+              <div tabindex="0" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
+                data-node="template">
+                <i class="fas fa-code"></i><span> Template</span>
+              </div>
+            </div>
+          </li>
 
+        </ul>
 
-
-
-
-
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="aws">
-          <i class="fab fa-aws"></i><span> AWS</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="log">
-          <i class="fas fa-file-signature"></i><span> File Log</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="google">
-          <i class="fab fa-google-drive"></i><span> Google Drive save</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="email">
-          <i class="fas fa-at"></i><span> Email send</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="template">
-          <i class="fas fa-code"></i><span> Template</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="multiple">
-          <i class="fas fa-code-branch"></i><span> Multiple inputs/outputs</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="personalized">
-          <i class="fas fa-fill"></i><span> Personalized</span>
-        </div>
-        <div tabindex="1" class="bx--btn bx--btn--ghost drag-drawflow" draggable="true" ondragstart="drag(event)"
-          data-node="dbclick">
-          <i class="fas fa-mouse"></i><span> DBClick!</span>
-        </div>
       </div>
       <!-- COMMANDS SECTION -->
-      <div>
+
+      <div style="margin-top: auto;">
         <button
           onclick="Swal.fire({ title: 'Export', html: '<pre><code>'+JSON.stringify(editor.export(), null,4)+'</code></pre>'})"
-          tabindex="0" class="bx--btn bx--btn--process-tertiary" type="button" style="width: 100%;">
-          Save
-        </button>
+          tabindex="0" class="bx--btn bx--btn--process-tertiary" style="width: 100%;">Save</button>
         <button onclick="editor.clearModuleSelected()" tabindex="0" class="bx--btn bx--btn--danger--tertiary"
-          type="button" aria-describedby="danger-clear" style="width: 100%;bottom: 0;">
-          <span id="danger-description-11" class="bx--visually-hidden">
-            danger
-          </span>
-          Clear
-        </button>
-
+          style="width: 100%;">Clear</button>
       </div>
+
     </div>
     <div class="col-right">
       <!--div class="menu">
@@ -187,112 +150,10 @@
     editor.reroute_fix_curvature = true;
     editor.force_first_input = false;
 
-    /*
-      editor.createCurvature = function(start_pos_x, start_pos_y, end_pos_x, end_pos_y, curvature_value, type) {
-        var center_x = ((end_pos_x - start_pos_x)/2)+start_pos_x;
-        return ' M ' + start_pos_x + ' ' + start_pos_y + ' L '+ center_x +' ' +  start_pos_y  + ' L ' + center_x + ' ' +  end_pos_y  + ' L ' + end_pos_x + ' ' + end_pos_y;
-      }*/
-
-
-
-
-
     const dataToImport = { "drawflow": { "Home": { "data": { "1": { "id": 1, "name": "welcome", "data": {}, "class": "welcome", "html": "\n    <div>\n      <div class=\"title-box\">👏 Welcome!!</div>\n      <div class=\"box\">\n        <p>Simple flow library <b>demo</b>\n        <a href=\"https://github.com/jerosoler/Drawflow\" target=\"_blank\">Drawflow</a> by <b>Jero Soler</b></p><br>\n\n        <p>Multiple input / outputs<br>\n           Data sync nodes<br>\n           Import / export<br>\n           Modules support<br>\n           Simple use<br>\n           Type: Fixed or Edit<br>\n           Events: view console<br>\n           Pure Javascript<br>\n        </p>\n        <br>\n        <p><b><u>Shortkeys:</u></b></p>\n        <p>🎹 <b>Delete</b> for remove selected<br>\n        💠 Mouse Left Click == Move<br>\n        ❌ Mouse Right == Delete Option<br>\n        🔍 Ctrl + Wheel == Zoom<br>\n        📱 Mobile support<br>\n        ...</p>\n      </div>\n    </div>\n    ", "typenode": false, "inputs": {}, "outputs": {}, "pos_x": 50, "pos_y": 50 }, "2": { "id": 2, "name": "slack", "data": {}, "class": "slack", "html": "\n          <div>\n            <div class=\"title-box\"><i class=\"fab fa-slack\"></i> Slack chat message</div>\n          </div>\n          ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "7", "input": "output_1" }] } }, "outputs": {}, "pos_x": 1028, "pos_y": 87 }, "3": { "id": 3, "name": "telegram", "data": { "channel": "channel_2" }, "class": "telegram", "html": "\n          <div>\n            <div class=\"title-box\"><i class=\"fab fa-telegram-plane\"></i> Telegram bot</div>\n            <div class=\"box\">\n              <p>Send to telegram</p>\n              <p>select channel</p>\n              <select df-channel>\n                <option value=\"channel_1\">Channel 1</option>\n                <option value=\"channel_2\">Channel 2</option>\n                <option value=\"channel_3\">Channel 3</option>\n                <option value=\"channel_4\">Channel 4</option>\n              </select>\n            </div>\n          </div>\n          ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "7", "input": "output_1" }] } }, "outputs": {}, "pos_x": 1032, "pos_y": 184 }, "4": { "id": 4, "name": "email", "data": {}, "class": "email", "html": "\n            <div>\n              <div class=\"title-box\"><i class=\"fas fa-at\"></i> Send Email </div>\n            </div>\n            ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "5", "input": "output_1" }] } }, "outputs": {}, "pos_x": 1033, "pos_y": 439 }, "5": { "id": 5, "name": "template", "data": { "template": "Write your template" }, "class": "template", "html": "\n            <div>\n              <div class=\"title-box\"><i class=\"fas fa-code\"></i> Template</div>\n              <div class=\"box\">\n                Ger Vars\n                <textarea df-template></textarea>\n                Output template with vars\n              </div>\n            </div>\n            ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "6", "input": "output_1" }] } }, "outputs": { "output_1": { "connections": [{ "node": "4", "output": "input_1" }, { "node": "11", "output": "input_1" }] } }, "pos_x": 607, "pos_y": 304 }, "6": { "id": 6, "name": "github", "data": { "name": "https://github.com/jerosoler/Drawflow" }, "class": "github", "html": "\n          <div>\n            <div class=\"title-box\"><i class=\"fab fa-github \"></i> Github Stars</div>\n            <div class=\"box\">\n              <p>Enter repository url</p>\n            <input type=\"text\" df-name>\n            </div>\n          </div>\n          ", "typenode": false, "inputs": {}, "outputs": { "output_1": { "connections": [{ "node": "5", "output": "input_1" }] } }, "pos_x": 341, "pos_y": 191 }, "7": { "id": 7, "name": "facebook", "data": {}, "class": "facebook", "html": "\n        <div>\n          <div class=\"title-box\"><i class=\"fab fa-facebook\"></i> Facebook Message</div>\n        </div>\n        ", "typenode": false, "inputs": {}, "outputs": { "output_1": { "connections": [{ "node": "2", "output": "input_1" }, { "node": "3", "output": "input_1" }, { "node": "11", "output": "input_1" }] } }, "pos_x": 347, "pos_y": 87 }, "11": { "id": 11, "name": "log", "data": {}, "class": "log", "html": "\n            <div>\n              <div class=\"title-box\"><i class=\"fas fa-file-signature\"></i> Save log file </div>\n            </div>\n            ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "5", "input": "output_1" }, { "node": "7", "input": "output_1" }] } }, "outputs": {}, "pos_x": 1031, "pos_y": 363 } } }, "Other": { "data": { "8": { "id": 8, "name": "personalized", "data": {}, "class": "personalized", "html": "\n            <div>\n              Personalized\n            </div>\n            ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "12", "input": "output_1" }, { "node": "12", "input": "output_2" }, { "node": "12", "input": "output_3" }, { "node": "12", "input": "output_4" }] } }, "outputs": { "output_1": { "connections": [{ "node": "9", "output": "input_1" }] } }, "pos_x": 764, "pos_y": 227 }, "9": { "id": 9, "name": "dbclick", "data": { "name": "Hello World!!" }, "class": "dbclick", "html": "\n            <div>\n            <div class=\"title-box\"><i class=\"fas fa-mouse\"></i> Db Click</div>\n              <div class=\"box dbclickbox\" ondblclick=\"showpopup(event)\">\n                Db Click here\n                <div class=\"modal\" style=\"display:none\">\n                  <div class=\"modal-content\">\n                    <span class=\"close\" onclick=\"closemodal(event)\">&times;</span>\n                    Change your variable {name} !\n                    <input type=\"text\" df-name>\n                  </div>\n\n                </div>\n              </div>\n            </div>\n            ", "typenode": false, "inputs": { "input_1": { "connections": [{ "node": "8", "input": "output_1" }] } }, "outputs": { "output_1": { "connections": [{ "node": "12", "output": "input_2" }] } }, "pos_x": 209, "pos_y": 38 }, "12": { "id": 12, "name": "multiple", "data": {}, "class": "multiple", "html": "\n            <div>\n              <div class=\"box\">\n                Multiple!\n              </div>\n            </div>\n            ", "typenode": false, "inputs": { "input_1": { "connections": [] }, "input_2": { "connections": [{ "node": "9", "input": "output_1" }] }, "input_3": { "connections": [] } }, "outputs": { "output_1": { "connections": [{ "node": "8", "output": "input_1" }] }, "output_2": { "connections": [{ "node": "8", "output": "input_1" }] }, "output_3": { "connections": [{ "node": "8", "output": "input_1" }] }, "output_4": { "connections": [{ "node": "8", "output": "input_1" }] } }, "pos_x": 179, "pos_y": 272 } } } } }
     editor.start();
     editor.import(dataToImport);
 
-
-
-    /*
-      var welcome = `
-      <div>
-        <div class="title-box">👏 Welcome!!</div>
-        <div class="box">
-          <p>Simple flow library <b>demo</b>
-          <a href="https://github.com/jerosoler/Drawflow" target="_blank">Drawflow</a> by <b>Jero Soler</b></p><br>
-  
-          <p>Multiple input / outputs<br>
-             Data sync nodes<br>
-             Import / export<br>
-             Modules support<br>
-             Simple use<br>
-             Type: Fixed or Edit<br>
-             Events: view console<br>
-             Pure Javascript<br>
-          </p>
-          <br>
-          <p><b><u>Shortkeys:</u></b></p>
-          <p>🎹 <b>Delete</b> for remove selected<br>
-          💠 Mouse Left Click == Move<br>
-          ❌ Mouse Right == Delete Option<br>
-          🔍 Ctrl + Wheel == Zoom<br>
-          📱 Mobile support<br>
-          ...</p>
-        </div>
-      </div>
-      `;
-  */
-
-
-    //editor.addNode(name, "typenode": false,  inputs, outputs, posx, posy, class, data, html);
-    /*editor.addNode('welcome', 0, 0, 50, 50, 'welcome', {}, welcome );
-    editor.addModule('Other');
-    */
-
-    /*
-        // Events!
-        editor.on('nodeCreated', function(id) {
-          console.log("Node created " + id);
-        })
-    
-        editor.on('nodeRemoved', function(id) {
-          console.log("Node removed " + id);
-        })
-    
-        editor.on('nodeSelected', function(id) {
-          console.log("Node selected " + id);
-        })
-    
-        editor.on('moduleCreated', function(name) {
-          console.log("Module Created " + name);
-        })
-    
-        editor.on('moduleChanged', function(name) {
-          console.log("Module Changed " + name);
-        })
-    
-        editor.on('connectionCreated', function(connection) {
-          console.log('Connection created');
-          console.log(connection);
-        })
-    
-        editor.on('connectionRemoved', function(connection) {
-          console.log('Connection removed');
-          console.log(connection);
-        })
-        editor.on('mouseMove', function(position) {
-          console.log('Position mouse x:' + position.x + ' y:'+ position.y);
-        })
-        editor.on('nodeMoved', function(id) {
-          console.log("Node moved " + id);
-        })
-    
-        editor.on('zoom', function(zoom) {
-          console.log('Zoom level ' + zoom);
-        })
-    
-        editor.on('translate', function(position) {
-          console.log('Translate x:' + position.x + ' y:'+ position.y);
-        })
-    
-        editor.on('addReroute', function(id) {
-          console.log("Reroute added " + id);
-        })
-    
-        editor.on('removeReroute', function(id) {
-          console.log("Reroute removed " + id);
-        })
-    */
     /* DRAG EVENT */
 
     /* Mouse and Touch Actions */
@@ -537,6 +398,29 @@
     }
 
   </script>
+
+  <script>
+    function toggleAccordion(button) {
+      const item = button.closest('.bx--accordion__item');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+      // Cambia el estado del ARIA para accesibilidad
+      button.setAttribute('aria-expanded', !isExpanded);
+
+      // Alterna la clase de Carbon que rota la flecha y muestra el contenido
+      if (isExpanded) {
+        item.classList.remove('bx--accordion__item--active');
+      } else {
+        item.classList.add('bx--accordion__item--active');
+      }
+    }
+  </script>
+  <style>
+    .bx--accordion__content {
+      padding: 0.5vw;
+      margin: 0;
+    }
+  </style>
 </body>
 
 </html>
